@@ -2,6 +2,10 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
+// Set EJS as the view engine
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+
 // Serve static files from the 'mystyle' folder
 app.use(express.static(path.join(__dirname, 'mystyle')));
 
@@ -11,7 +15,7 @@ const checkWorkingHours = (req, res, next) => {
   const day = now.getDay();
   const hour = now.getHours();
 
-  // Condition: Monday to Friday, 9 AM - 5 PM  1<=day<= 5  9<=hour<17
+  // Condition: Monday to Friday, 9 AM - 5 PM
   if (day >= 1 && day <= 5 && hour >= 9 && hour < 17) {
     next();
   } else {
@@ -19,17 +23,17 @@ const checkWorkingHours = (req, res, next) => {
   }
 };
 
-// Routes to serve HTML files
+// Routes to render EJS templates
 app.get('/home', checkWorkingHours, (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'home.html'));
+  res.render('home');
 });
 
 app.get('/services', checkWorkingHours, (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'services.html'));
+  res.render('services');
 });
 
 app.get('/contact', checkWorkingHours, (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'contact.html'));
+  res.render('contact');
 });
 
 // Start the server

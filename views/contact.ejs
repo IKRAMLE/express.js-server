@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Sweet Haven</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <a href="">
+            <img src="images/logo.png" alt="Sweet Haven Logo" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <div>
+              <div class="search-form">
+                <input
+                  type="text"
+                  placeholder="Search for baked goods..."
+                  class="search-input"
+                />
+                <i class="fas fa-search search-icon"></i>
+              </div>
+            </div>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-user"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Location and Contact Form Section -->
+    <section class="contact-us-container">
+      <!-- Location Section with Map -->
+      <div class="location">
+        <div class="location-content">
+          <h2>Visit Us at Our Bakery</h2>
+          <p>
+            We're excited to welcome you! Find us at our location on the map
+            below:
+          </p>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d796.6362831932025!2d-7.635835564347828!3d33.58619715022197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d32ec3453e55%3A0xd5fd14fe98e62b80!2sGo%20My%20Code%20Morocco!5e0!3m2!1sen!2sma!4v1738389178334!5m2!1sen!2sma"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Contact Form Section -->
+      <div class="contact-us">
+        <div class="contact-content">
+          <h1>Contact Us</h1>
+          <p>Feel free to contact us with any questions or feedback</p>
+        </div>
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+
+          <label for="surname">Surname</label>
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            placeholder="Your Surname"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+
+          <label for="description">Description</label>
+          <textarea
+            id="description"
+            name="description"
+            placeholder="Your Message"
+            required
+          ></textarea>
+
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h6>Menu</h6>
+            <ul>
+              <li><a href="#menu">Cakes</a></li>
+              <li><a href="#menu">Pastries</a></li>
+              <li><a href="#menu">Cookies</a></li>
+              <li><a href="#menu">Bread</a></li>
+              <li><a href="#menu">Desserts</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-section">
+            <h6>About Us</h6>
+            <ul>
+              <li><a href="#about">Our Story</a></li>
+              <li><a href="#about">Our Bakers</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#careers">Careers</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-section">
+            <h6>Support</h6>
+            <ul>
+              <li><a href="#contact">Customer Service</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Order Guide</a></li>
+              <li><a href="#">Delivery Options</a></li>
+              <li><a href="#">Feedback</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-section">
+            <h6>Follow Us</h6>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <img src="images/icons8-facebook-96.png" alt="Facebook" />
+                <span>Facebook</span>
+              </a>
+              <a href="#" class="social-link">
+                <img src="images/icons8-instagram-48.png" alt="Instagram" />
+                <span>Instagram</span>
+              </a>
+              <a href="#" class="social-link">
+                <img src="images/icons8-twitter-48.png" alt="Twitter" />
+                <span>Twitter</span>
+              </a>
+              <a href="#" class="social-link">
+                <img src="images/icons8-pinterest-48.png" alt="Twitter" />
+                <span>Pintrest</span>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025-2030 Sweet Haven Bakery | All Rights Reserved.
+            <br />
+            made with <i class="fa-solid fa-heart"></i> by Ikram
+          </p>
+          <div class="footer-bottom-links">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Site Map</a>
+            <select class="language-select">
+              <option selected>Select Language</option>
+              <option value="en">English</option>
+              <option value="ar">Arabic</option>
+            </select>
+          </div>
+        </div>
+      </footer>
+
+  </body>
+</html>
